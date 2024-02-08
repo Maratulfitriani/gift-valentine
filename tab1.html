@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ucapan Valentine</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('pink.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #message {
+    margin-top: 50px;
+    font-size: 24px;
+    color: white;
+  }
+  #heart {
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .hidden {
+    display: none;
+  }
+  .bottom-images {
+    margin-top: 20px;
+  }
+  .bottom-image {
+    width: 150px;
+    height: auto;
+  }
+  .nextButton {
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+<div id="message">Klik hati untuk melihat pesan spesial from fitri to opall!</div>
+<img id="heart" src="https://emojicdn.elk.sh/❤️" width="100" height="100">
+<div id="bottomImages" class="bottom-images hidden">
+  <img id="bottomImage1" class="bottom-image" src="panda6.gif" alt="Gift 1"> <!-- Ganti 'gift1.png' dengan URL atau path lokal gambar Anda -->
+  <img id="bottomImage2" class="bottom-image hidden" src="panda5.gif" alt="Gift 2"> <!-- Ganti 'gift2.png' dengan URL atau path lokal gambar Anda -->
+</div>
+<button id="nextButton1" class="hidden nextButton">Next</button>
+<button id="nextButton2" class="hidden nextButton">Next</button>
+<button id="nextButton3" class="hidden nextButton">Next</button>
+<button id="nextButton4" class="hidden nextButton">Next</button>
+<script>
+  const heart = document.getElementById('heart');
+  const message = document.getElementById('message');
+  const bottomImages = document.getElementById('bottomImages');
+  const bottomImage1 = document.getElementById('bottomImage1');
+  const bottomImage2 = document.getElementById('bottomImage2');
+  const nextButton1 = document.getElementById('nextButton1');
+  const nextButton2 = document.getElementById('nextButton2');
+  const nextButton3 = document.getElementById('nextButton3');
+  const nextButton4 = document.getElementById('nextButton4');
+
+  heart.addEventListener('click', () => {
+    message.innerHTML = "Selamat Hari Valentine!❤️<br> Semua kebaikan, kekuatan, dan caramu memperlakukan aku dengan penuh cinta merupakan alasan bahwa kamu adalah Valentine-ku, Selamat Hari Valentine untukmu, cintaku. Kamu adalah bintang yang bersinar setiap hari dalam hidupku. Kamu adalah alasan mengapa aku bersinar dengan begitu banyak kebahagiaan dan kegembiraan.";
+    bottomImages.classList.remove('hidden');
+    bottomImage1.classList.remove('hidden');
+    heart.style.display = 'none';
+    nextButton1.classList.remove('hidden');
+  });
+
+  nextButton1.addEventListener('click', () => {
+    message.innerHTML = "Air arak diharamkan<br>Karenanya nyawa melayang<br>Meskipun jarak memisahkan<br>Semua itu bukan penghalang";
+    bottomImage1.classList.add('hidden');
+    bottomImage2.classList.remove('hidden');
+    nextButton1.style.display = 'none';
+    nextButton2.classList.remove('hidden');
+  });
+
+  nextButton2.addEventListener('click', () => {
+    // Tambahkan teks untuk bagian keempat di sini
+    message.innerHTML = "Sinii peyukk ayangggg, utututu jadii makinn cayanggg";
+    bottomImage2.classList.add('hidden');
+    // Tambahkan gambar untuk bagian keempat di sini
+    const bottomImage4 = document.createElement('img');
+    bottomImage4.setAttribute('class', 'bottom-image');
+    bottomImage4.setAttribute('src', 'panda7.gif'); // Ganti 'panda4.gif' dengan URL atau path lokal gambar Anda
+    bottomImage4.setAttribute('alt', 'Gift 4');
+    bottomImages.appendChild(bottomImage4);
+    // Tambahkan logika atau aksi yang ingin dilakukan untuk bagian keempat di sini
+    nextButton2.style.display = 'none';
+    nextButton3.classList.remove('hidden');
+  });
+
+ 
+
+  // Tambahkan logika untuk bagian keempat di sini, seperti yang dilakukan untuk bagian sebelumnya
+
+
+</script>
+</body>
+</html>
